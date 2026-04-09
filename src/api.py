@@ -25,6 +25,10 @@ app.add_middleware(
 class ReviewRequest(BaseModel):
     pr_url: str
 
+@app.get("/api/ping")
+async def ping():
+    return {"status": "alive"}
+
 @app.post("/api/review")
 async def review_pr(request: ReviewRequest):
     try:
