@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ai-pr-reviewer
+    runtime: python
+    buildCommand: |
+      pip install -r requirements.txt
+      cd frontend && npm install && npm run build
+    startCommand: python main.py start
+    envVars:
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
