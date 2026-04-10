@@ -1,16 +1,18 @@
 import uvicorn
 import typer
-# We keep typer so we can launch it elegantly from CLI
+import os
 
 app = typer.Typer()
 
 @app.command()
-def start(port: int = 8000):
+def start(port: int = None):
     """
     Start the FastAPI Web Server for the frontend.
     """
-    typer.echo(f"Starting web server on http://localhost:{port}")
-    uvicorn.run("src.api:app", host="0.0.0.0", port=port, reload=True)
+    # Render injects a PORT env var — fall back to 8000 for local dev
+    port = port or int(os.environ.get("PORT", 8000))
+    typer.echo(f"Starting web server on http://0.0.0.0:{port}")
+    uvicorn.run("src.api:app", host="0.0.0.0", port=port, reload=False)
 
 if __name__ == "__main__":
     app()
