@@ -125,7 +125,7 @@ export default function HeroSection() {
       />
 
       <nav className="fixed top-0 left-0 right-0 z-50 px-4 md:px-6 py-4 md:py-6">
-        <div className="liquid-glass rounded-full max-w-5xl mx-auto px-6 py-3 flex items-center justify-between shadow-lg relative">
+        <div className="liquid-glass bg-black/40 backdrop-blur-md border border-white/10 rounded-full max-w-5xl mx-auto px-6 py-3 flex items-center justify-between shadow-lg relative">
           <div className="flex items-center cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <Globe className="w-6 h-6 text-white mr-2 flex-shrink-0" />
             <span className="text-white font-semibold text-lg">AI Reviewer</span>
@@ -147,7 +147,7 @@ export default function HeroSection() {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="absolute top-full left-4 right-4 mt-2 liquid-glass rounded-2xl p-5 flex flex-col gap-4 shadow-xl md:hidden animate-in fade-in slide-in-from-top-2">
+          <div className="absolute top-full left-4 right-4 mt-2 liquid-glass bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl p-5 flex flex-col gap-4 shadow-xl md:hidden animate-in fade-in slide-in-from-top-2">
             <a href="#mission" onClick={() => setIsMobileMenuOpen(false)} className="text-white/80 hover:text-white text-base font-medium transition-colors">Mission</a>
             <a href="#cli" onClick={() => setIsMobileMenuOpen(false)} className="text-white/80 hover:text-white text-base font-medium transition-colors">CLI Details</a>
             <a href="#security" onClick={() => setIsMobileMenuOpen(false)} className="text-white/80 hover:text-white text-base font-medium transition-colors">Security</a>
@@ -162,7 +162,7 @@ export default function HeroSection() {
         </h1>
         
         <div className="max-w-xl w-full mb-6">
-          <div className="liquid-glass rounded-full pl-6 pr-2 py-2 flex items-center gap-3">
+          <div className="liquid-glass bg-black/40 backdrop-blur-md border border-white/10 rounded-full pl-6 pr-2 py-2 flex items-center gap-3">
             <input 
               type="url" 
               placeholder="Enter GitHub PR URL" 
