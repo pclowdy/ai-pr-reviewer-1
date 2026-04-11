@@ -29,7 +29,7 @@ export default function FeaturedVideoSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
             
             <div className="relative z-10 p-6 md:p-10 flex flex-col md:flex-row justify-between items-end gap-6 w-full">
-            <div className="liquid-glass rounded-2xl p-6 md:p-8 max-w-md w-full md:w-auto">
+            <div className="liquid-glass bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-8 max-w-md w-full md:w-auto">
               <div className="text-white/50 text-xs tracking-widest uppercase mb-3">
                 CLI-First Design
               </div>
