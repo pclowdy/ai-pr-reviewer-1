@@ -38,13 +38,13 @@ export default function App() {
         <div className="liquid-glass bg-black/40 backdrop-blur-md border border-white/10 rounded-3xl md:rounded-full px-6 md:px-8 py-4 text-white/60 text-xs md:text-sm tracking-widest uppercase text-center flex flex-wrap justify-center items-center gap-2 max-w-full">
           <span>Developed by</span>
           <div className="flex flex-wrap justify-center items-center gap-2">
-            <span className="text-white font-semibold">Sourish</span>
+            <span className="text-white font-semibold">Pritisha</span>
             <span className="text-white/40">,</span>
-            <span className="text-white font-semibold">Rishika</span>
+            <span className="text-white font-semibold">Krishna Priya</span>
             <span className="text-white/40">,</span>
-            <span className="text-white font-semibold">Harsha</span>
+            <span className="text-white font-semibold">Pratham</span>
             <span className="text-white/40">&</span>
-            <span className="text-white font-semibold">Abhiram</span>
+            <span className="text-white font-semibold">.</span>
           </div>
         </div>
       </footer>
