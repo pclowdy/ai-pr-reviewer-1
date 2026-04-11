@@ -31,7 +31,7 @@ export default function ServicesSection() {
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.8, delay: 0.15 }}
-            className="liquid-glass rounded-3xl overflow-hidden group flex flex-col"
+            className="liquid-glass bg-black/40 backdrop-blur-md border border-white/10 rounded-3xl overflow-hidden group flex flex-col"
           >
             <div className="relative aspect-video overflow-hidden">
               <video
@@ -52,7 +52,7 @@ export default function ServicesSection() {
                 <span className="uppercase tracking-widest text-white/40 text-xs">
                   Code Quality
                 </span>
-                <div className="liquid-glass rounded-full p-2 transition-transform duration-300 group-hover:rotate-180">
+                <div className="liquid-glass bg-black/40 backdrop-blur-md border border-white/10 rounded-full p-2 transition-transform duration-300 group-hover:rotate-180">
                   <ArrowUpRight className="w-4 h-4 text-white" />
                 </div>
               </div>
@@ -71,7 +71,7 @@ export default function ServicesSection() {
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="liquid-glass rounded-3xl overflow-hidden group flex flex-col"
+            className="liquid-glass bg-black/40 backdrop-blur-md border border-white/10 rounded-3xl overflow-hidden group flex flex-col"
           >
             <div className="relative aspect-video overflow-hidden">
               <video
@@ -92,7 +92,7 @@ export default function ServicesSection() {
                 <span className="uppercase tracking-widest text-white/40 text-xs">
                   Security Risk
                 </span>
-                <div className="liquid-glass rounded-full p-2 transition-transform duration-300 group-hover:rotate-180">
+                <div className="liquid-glass bg-black/40 backdrop-blur-md border border-white/10 rounded-full p-2 transition-transform duration-300 group-hover:rotate-180">
                   <ArrowUpRight className="w-4 h-4 text-white" />
                 </div>
               </div>
